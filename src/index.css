@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210 29% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 29% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 29% 15%;
+
+    --primary: 145 63% 32%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 29% 97%;
+    --secondary-foreground: 210 29% 15%;
+
+    --muted: 210 29% 95%;
+    --muted-foreground: 210 20% 40%;
+
+    --accent: 38 92% 50%;
+    --accent-foreground: 210 29% 15%;
+
+    --destructive: 0 72% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 20% 85%;
+    --input: 210 20% 85%;
+    --ring: 145 63% 32%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 145 63% 32%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 145 63% 32%;
+    --sidebar-accent: 145 50% 25%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 145 50% 28%;
+    --sidebar-ring: 0 0% 100%;
+
+    --chart-1: 145 63% 32%;
+    --chart-2: 38 92% 50%;
+    --chart-3: 200 85% 45%;
+    --chart-4: 145 45% 45%;
+    --chart-5: 210 29% 35%;
+
+    --font-sans: 'Source Sans Pro', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+    --font-serif: 'Source Serif Pro', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+    --font-mono: 'Source Code Pro', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+
+    --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.05);
+    --shadow: 0 1px 3px 0 hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+    --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -2px hsl(0 0% 0% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.1), 0 4px 6px -4px hsl(0 0% 0% / 0.1);
+
+    --spacing: 0.25rem;
+  }
+
+  .dark {
+    --background: 210 29% 10%;
+    --foreground: 210 20% 95%;
+
+    --card: 210 25% 14%;
+    --card-foreground: 210 20% 95%;
+
+    --popover: 210 25% 14%;
+    --popover-foreground: 210 20% 95%;
+
+    --primary: 145 55% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 25% 20%;
+    --secondary-foreground: 210 20% 95%;
+
+    --muted: 210 25% 20%;
+    --muted-foreground: 210 15% 65%;
+
+    --accent: 38 85% 55%;
+    --accent-foreground: 210 29% 10%;
+
+    --destructive: 0 65% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 20% 25%;
+    --input: 210 20% 25%;
+    --ring: 145 55% 45%;
+
+    --sidebar-background: 210 25% 12%;
+    --sidebar-foreground: 210 20% 95%;
+    --sidebar-primary: 145 55% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 25% 18%;
+    --sidebar-accent-foreground: 210 20% 95%;
+    --sidebar-border: 210 20% 20%;
+    --sidebar-ring: 145 55% 45%;
+
+    --chart-1: 145 55% 45%;
+    --chart-2: 38 85% 55%;
+    --chart-3: 200 75% 55%;
+    --chart-4: 145 40% 55%;
+    --chart-5: 210 20% 50%;
+
+    --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.15);
+    --shadow: 0 1px 3px 0 hsl(0 0% 0% / 0.2), 0 1px 2px -1px hsl(0 0% 0% / 0.2);
+    --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.2), 0 2px 4px -2px hsl(0 0% 0% / 0.2);
+    --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.2), 0 4px 6px -4px hsl(0 0% 0% / 0.2);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
